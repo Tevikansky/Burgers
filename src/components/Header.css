@@ -1,0 +1,41 @@
+header::before {
+  content: "";
+  display: block;
+  background: #ffab08;
+  width: 2880px;
+  height: 2880px;
+  border-radius: 2880px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+header {
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 466px;
+  padding: 30px;
+}
+.header-content {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+
+}
+.header-content__wrapper>.title {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 52px;
+}
+.header-content__wrapper>.title::after {
+  content: "сочные бургеры!";
+  color: #ff5c00;
+}
+.header-content__wrapper>.text {
+  color: white;
+}
